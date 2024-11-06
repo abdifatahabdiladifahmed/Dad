@@ -15,11 +15,11 @@ const loadMenuItems = () => {
 
   menuItems.forEach(item => {
     const menuItem = document.createElement("div");
-    menuItem.classList.add("menu-item", "rounded", "shadow-lg", "p-6", "bg-white");
+    menuItem.classList.add("menu-item", "bg-white", "rounded", "shadow-md", "p-6");
 
     menuItem.innerHTML = `
-      <img src="${item.image}" alt="${item.title}" class="rounded mb-4">
-      <h3 class="text-2xl font-bold mb-2">${item.title}</h3>
+      <img src="${item.image}" alt="${item.title}" class="w-full object-cover rounded mb-6">
+      <h3 class="text-2xl font-bold mb-4">${item.title}</h3>
     `;
 
     menuContainer.appendChild(menuItem);
