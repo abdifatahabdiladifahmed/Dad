@@ -20,7 +20,6 @@ const loadMenuItems = () => {
     menuItem.innerHTML = `
       <img src="${item.image}" alt="${item.title}" class="rounded mb-4">
       <h3 class="text-2xl font-bold mb-2">${item.title}</h3>
-      <p class="text-gray-700">A delightful description of ${item.title} goes here.</p>
     `;
 
     menuContainer.appendChild(menuItem);
