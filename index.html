@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header and Navigation -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo Image -->
+      <a href="#home">
+        <img src="images/logo.jpg" alt="Restaurant Logo" class="h-16"> <!-- Adjusted height for a larger logo -->
+      </a>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="text-gray-700 hover:text-gray-900">Home</a></li>
+          <li><a href="#menu" class="text-gray-700 hover:text-gray-900">Menu</a></li>
+          <li><a href="#about" class="text-gray-700 hover:text-gray-900">About Us</a></li>
+          <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero bg-cover bg-center h-[100vh] flex items-center justify-center text-center text-white" style="background-image: url('images/restaurant-hero.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Local Restaurant</h2>
+      <p class="text-xl mb-8">A Taste of Tradition & Flavor</p>
+      <a href="#menu" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
+    <div id="menu-items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Menu items will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">About Us</h2>
+      <p class="max-w-2xl mx-auto mb-8">Welcome to [Restaurant Name], where every meal tells a story of freshness, flavor, and community! Established in 2023, we’re a proudly local restaurant, dedicated to bringing you the finest dishes made from fresh, seasonal ingredients. Our mission is to create a space where family and friends gather over delicious meals, crafted with love and care, in an inviting and warm atmosphere.
+
+        At [Restaurant Name], we believe in celebrating the richness of our local flavors. Our menu combines traditional favorites with a modern twist, inspired by the diverse tastes of our community. From our carefully prepared appetizers to our mouthwatering main courses and delectable desserts, each dish is a testament to our passion for food and our commitment to quality.
+        
+        As a new addition to the neighborhood, we’re excited to grow alongside the community, supporting local farmers, bakers, and suppliers. We look forward to welcoming you, whether you’re here for a quick bite, a family celebration, or a cozy evening with friends.
+        
+        Join us, taste the difference, and be part of our story..</p>
+      <div class="flex justify-center space-x-8">
+        <div class="text-center">
+          <img src="images/chef.jpg" alt="Waiter" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="font-bold text-lg">Waiter</h3>
+          <p>Waiters</p>
+        </div>
+        <div class="text-center">
+          <img src="images/chef.jpg" alt="Chef" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="font-bold text-lg">Chef XX</h3>
+          <p>Cooks</p>
+        </div>
+        <div class="text-center">
+          <img src="images/staff.jpg" alt="Staff" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="font-bold text-lg">XX</h3>
+          <p>Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+      <p>Phone: <a href="tel:+252612237622" class="text-blue-600">+252 612237622</a></p>
+      <p>Phone: <a href="tel:+252622237622" class="text-blue-600">+252 622237622</a></p>
+      <p>Email: <a href="mailto:superrestaurantandcafeteria@gmail.com" class="text-blue-600">superrestaurantandcafeteria@gmail.com</a></p>
+      <p>Hours of Operation: Sat - Wednesday: 9 AM - 9 PM</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
